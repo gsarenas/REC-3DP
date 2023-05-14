@@ -1,10 +1,10 @@
 Estrutura
 
-[ELÉTRICA](ELÉTRICA/) /
-|
-|
-— — — [REF/](ELÉTRICA/REF/)
+[ELÉTRICA](ELÉTRICA/) /  
+|  
+|  
+— — — [REF/](ELÉTRICA/REF/)  
 
-[MECÂNICA](MECÂNICA/) /
-|
-|
+[MECÂNICA](MECÂNICA/) /  
+|  
+|  
