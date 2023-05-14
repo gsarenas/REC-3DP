@@ -12,11 +12,11 @@ Recicladora de Garrafa PET para Impressão 3D
 > Pedro Scapin <061200008@faculdade.cefsa.edu.br>  
 > Rebeca Vitoretti <062200020@faculdade.cefsa.edu.br>  
 
-# Funcionamento do projeto
+## Funcionamento do projeto
 
-## Protótipo funcionando
+### Protótipo funcionando
 ![](IMG/PROTOTIPO-FUNCIONANDO.png)
 
-## Placa protótipo
+### Placa protótipo
 Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
 ![](IMG/P_20230319_201323.jpg)
