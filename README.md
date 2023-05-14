@@ -21,4 +21,5 @@ Recicladora de Garrafa PET para Impressão 3D
 
 ### Placa protótipo
 Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
+
 ![](IMG/P_20230319_201323.jpg)
