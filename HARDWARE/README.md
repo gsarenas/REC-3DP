@@ -1,7 +1,7 @@
 #Estrutura
 
 ### [ELÉTRICA/](ELÉTRICA/)  
-    * [REF/](ELÉTRICA/REF/)  
+* [REF/](ELÉTRICA/REF/)  
 
 ### [MECÂNICA](MECÂNICA/) /  
 
