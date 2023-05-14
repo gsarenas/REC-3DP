@@ -12,4 +12,11 @@ Apresentacao de artigo no SIMAC
 > Pedro Scapin <061200008@faculdade.cefsa.edu.br>  
 > Rebeca Vitoretti <062200020@faculdade.cefsa.edu.br>  
 
-![Protótipo REC-3DP](IMG/P_20230319_201323.jpg)
+# Funcionamento do projeto
+
+## Protótipo funcionando
+![](IMG/PROTOTIPO-FUNCIONANDO.png)
+
+## Placa protótipo
+Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
+![](IMG/P_20230319_201323.jpg)
