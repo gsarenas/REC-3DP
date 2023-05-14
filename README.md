@@ -1,7 +1,7 @@
 # REC-3DP  
 Recicladora de Garrafa PET para Impressão 3D  
   
-Apresentado a Faculdade Engenheiro Salvador Arena (FESA)
+Apresentado a Faculdade Engenheiro Salvador Arena (FESA)  
 Apresentacao de artigo no SIMAC
 
 > **Desenvolvido por:**
