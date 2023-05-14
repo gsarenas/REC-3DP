@@ -11,3 +11,5 @@ Apresentacao de artigo no SIMAC
 > Gustavo Arenas <061200006@faculdade.cefsa.edu.br>  
 > Pedro Scapin <061200008@faculdade.cefsa.edu.br>  
 > Rebeca Vitoretti <062200020@faculdade.cefsa.edu.br>  
+
+![Protótipo REC-3DP](IMG/P_20230319_201323.jpg)
