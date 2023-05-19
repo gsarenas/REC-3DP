@@ -5,7 +5,7 @@ Firmware funcional com a programação necessária para o projeto
 Firmware funcional completo com um rascunho de interface UART para comunicação serial via USB  
 Funções básicas implementadas:
 * F___: Feed Rate (controle da velocidade do motor)
-* M104 S___: Set hotend temperature (controle da temperatura do hotend)
+* M104 S___: Set Hotend Temperature (controle da temperatura do hotend)
 
 ## Bibliotecas  
 Para o funcionamento deste projeto, foram utilizadas as bibliotecas:  
