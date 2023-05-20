@@ -116,22 +116,22 @@ namespace Temperature {
         else
             analogWrite(HOTEND_PIN, int(pid_output));
 
-        if (COOLING_ENABLED) {
+        #if COOLING_ENABLED
             // Recurso de resfriamento
             if (targetTemp == 0 && tempValue > 30) {
                 analogWrite(HEATED_BED_PIN, 255);
             } else
                 analogWrite(HEATED_BED_PIN, 0);
-        }
+        #endif
 
-        if (PID_TUNING_ENABLED) {
+        #if PID_TUNING_ENABLED
             currMillis_Temperature = millis();  // Atualiza o tempo rodando o programa atual na placa
             if (currMillis_Temperature >= 315000 && targetTemp != 0) {
                 if (DEBUG_ENABLED) DEBUG_PRINTLN("Stop!");
                 if (COOLING_ENABLED) analogWrite(HEATED_BED_PIN, 255);
                 targetTemp = 0;
             }
-        }
+        #endif
     }
 
     // Calcula o PID

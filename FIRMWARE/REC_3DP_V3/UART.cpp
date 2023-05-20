@@ -52,7 +52,7 @@ namespace UART {
      * Done: Fecha a porta serial e restaura valores iniciais
      */ 
     void serial_handler() {
-    #if (SERIAL_ENABLED)
+    #if SERIAL_ENABLED
             // Verifica se ha algum dado disponivel para leitura da porta serial
             if (SERIAL_AVAILABLE()) {
                 // Le o byte de entrada
