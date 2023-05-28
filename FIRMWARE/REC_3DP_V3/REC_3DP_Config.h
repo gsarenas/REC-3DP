@@ -5,7 +5,7 @@
 //================================================= Macros ==================================================
 //===========================================================================================================
 
-#define DEBUG_ENABLED false // Habilita debug via Serial.print (altere somente essa linha)
+#define DEBUG_ENABLED true // Habilita debug via Serial.print (altere somente essa linha)
 #if DEBUG_ENABLED
   #define DEBUG_PRINT(x) Serial.print(x)
   #define DEBUG_PRINTLN(x) Serial.println(x)

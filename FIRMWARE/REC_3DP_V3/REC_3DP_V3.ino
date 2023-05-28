@@ -18,10 +18,7 @@
 void setup() {
   DEBUG_BEGIN(115200);
   DEBUG_PRINTLN("Debug Iniciado");
-  delay(10); // Pequeno delay para a msg do debug nao ter conflito com a inicializacao serial
-  SERIAL_BEGIN(115200);
-  SERIAL_PRINTLN("Serial Iniciada");
-
+  
   // Inicializa modulo de temperatura
   Temperature::Init_Timer3();
   Temperature::Init();

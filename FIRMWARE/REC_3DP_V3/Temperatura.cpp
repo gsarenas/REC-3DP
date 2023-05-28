@@ -10,6 +10,9 @@ namespace Temperature {
     const int adcTable[] = {23, 25, 27, 28, 31, 33, 35, 38, 41, 44, 48, 52, 56, 61, 66, 71, 78, 84, 92, 100, 109, 120, 131, 143, 156, 171, 187, 205, 224, 245, 268, 293, 320, 348, 379, 411, 445, 480, 516, 553, 591, 628, 665, 702, 737, 770, 801, 830, 857, 881, 903, 922, 939, 954, 966, 977, 985, 993, 999, 1004, 1008, 1012, 1016, 1020};
     const int tempTable[] = {300, 295, 290, 285, 280, 275, 270, 265, 260, 255, 250, 245, 240, 235, 230, 225, 220, 215, 210, 205, 200, 195, 190, 185, 180, 175, 170, 165, 160, 155, 150, 145, 140, 135, 130, 125, 120, 115, 110, 105, 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, -5, -10, -15};
 
+    // Leitura ADC
+    int adcValue;
+
     // Temperatura maxima de trabalho permitida
     int maxTempAllowed = 240;
 
@@ -24,7 +27,7 @@ namespace Temperature {
 
     // Constantes PID
     float Kp = 18;    // Ganho proporcional
-    float Ki = 0.01;  // Ganho integral
+    float Ki = 0.006;  // Ganho integral
     float Kd = 160;   // Ganho derivativo
 
     // PID CLASSICO ZIEGLER-NICHOLS
@@ -90,7 +93,7 @@ namespace Temperature {
     // Recebe o valor da porta analogica e converte para temperatura
     float analog2temp() {
         // Faz a leitura ADC
-        int adcValue = analogRead(THERMISTOR_PIN);
+        adcValue = analogRead(THERMISTOR_PIN);
         // Encontra o valor ADC mais proximo na tabela
         int i = 0;
         while (adcValue > adcTable[i] && i < 127 && adcValue > 20 && adcValue < 1023) {

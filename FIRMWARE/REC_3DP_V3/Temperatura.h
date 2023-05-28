@@ -11,7 +11,7 @@ namespace Temperature {
 
     extern float tempValue;
     extern float lastTempValue;
-
+    extern int adcValue;
     extern int targetTemp;
 
     extern float Kp;

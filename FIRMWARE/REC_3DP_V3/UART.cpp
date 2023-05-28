@@ -20,9 +20,13 @@ namespace UART {
     // Serial print debug
     void debug_handler() {
     #if DEBUG_ENABLED
+        if (!SERIAL_ENABLED) {
             if (one_sec_has_passed()) {
                 DEBUG_PRINT("Real T: ");
                 DEBUG_PRINT(Temperature::tempValue);
+                DEBUG_PRINT(" | ");
+                DEBUG_PRINT("ADC: ");
+                DEBUG_PRINT(Temperature::adcValue);
                 DEBUG_PRINT(" | ");
                 DEBUG_PRINT("PID out: ");
                 DEBUG_PRINT(Temperature::pid_output);
@@ -42,6 +46,20 @@ namespace UART {
                 // Atualiza o ultimo instante em que 'print_debug()' foi chamado
                 prevMillis_Debug = currMillis_Debug;
             }
+        } else {
+            if (one_sec_has_passed()) {
+                // Protocolo:
+                // temperatura : pid : velocidade
+                DEBUG_PRINT(Temperature::tempValue);
+                DEBUG_PRINT(":");
+                DEBUG_PRINT(int(Temperature::pid_output));
+                DEBUG_PRINT(":");
+                DEBUG_PRINTLN(Motor::motSpeed_);
+
+                // Atualiza o ultimo instante em que 'print_debug()' foi chamado
+                prevMillis_Debug = currMillis_Debug;
+            }
+        }
     #endif
     }
 
@@ -52,7 +70,7 @@ namespace UART {
      * Done: Fecha a porta serial e restaura valores iniciais
      */ 
     void serial_handler() {
-    #if SERIAL_ENABLED
+    #if (SERIAL_ENABLED)
             // Verifica se ha algum dado disponivel para leitura da porta serial
             if (SERIAL_AVAILABLE()) {
                 // Le o byte de entrada

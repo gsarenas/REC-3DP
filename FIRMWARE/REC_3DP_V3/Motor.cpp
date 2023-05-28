@@ -44,18 +44,18 @@ namespace Motor {
     if (motSpeed_ > 0) {
       motSpeed = map(motSpeed_, 1, 100, 255, 3);
       OCR2A = motSpeed;
-      digitalWrite(DIR_PIN, HIGH); // Direcao do motor CW
-      digitalWrite(EN_PIN, LOW);
+      digitalWrite(DIR_PIN, 1); // Direcao do motor CW
+      digitalWrite(EN_PIN, 0);
     }
     // Velocidade negativa -> Giro no sentido anti-horario
     else if (motSpeed_ < 0) {
       motSpeed = map(abs(motSpeed_), 1, 100, 255, 3);
       OCR2A = motSpeed;
-      digitalWrite(DIR_PIN, LOW); // Direcao do motor CCW
-      digitalWrite(EN_PIN, LOW);
+      digitalWrite(DIR_PIN, 0); // Direcao do motor CCW
+      digitalWrite(EN_PIN, 0);
     }
     // Desabilita o driver do motor
     else
-      digitalWrite(EN_PIN, HIGH);
+      digitalWrite(EN_PIN, 1);
   }
 }
