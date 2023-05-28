@@ -26,9 +26,9 @@ Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
 
 ## Interface visual - UART
 
-Implementação de uma interface visual para controle do dispositivo via porta serial.
+### Implementação de uma interface visual para controle do dispositivo via porta serial.
 
-### Funções disponívels (G-CODE):
+Funções disponívels (G-CODE):
 * M104 S___: Configura o novo setpoint para temperatura do Hotend (com feedback, controlador PID)
 * F___: Configura o novo setpoint para velocidade do motor (sem feedback)
 
