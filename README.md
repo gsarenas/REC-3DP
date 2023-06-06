@@ -14,6 +14,8 @@ Recicladora de Garrafa PET para Impressão 3D
 
 ## Funcionamento do projeto
 
+## Design do dispositivo
+
 ### Protótipo funcionando
 [Recicladora PET - Teste 01](https://youtu.be/Kp44HoyRCVU)
 
@@ -23,3 +25,13 @@ Recicladora de Garrafa PET para Impressão 3D
 Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
 
 ![](IMG/P_20230319_201323.jpg)
+
+## Interface visual - UART
+
+Implementação de uma interface visual para controle do dispositivo via porta serial. Além do terminal para comunicação bidirecional entre o dispositivo e um guest, foi implementada também uma plotagem que é atualizada em tempo real das principais variáveis de processo (temperatura do Hotend, tensão fornecida e velocidade do motor)
+
+Funções disponívels (G-CODE):
+* M104 S___: Configura o novo setpoint para temperatura do Hotend (com feedback, controlador PID)
+* F___: Configura o novo setpoint para velocidade do motor (sem feedback)
+
+![](IMG/REC-3DP-GUI.png)
