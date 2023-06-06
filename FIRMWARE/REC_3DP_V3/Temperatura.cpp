@@ -31,9 +31,9 @@ namespace Temperature {
     float Kd = 160;   // Ganho derivativo
 
     // PID CLASSICO ZIEGLER-NICHOLS
-    /*float Kp = 21; // Ganho proporcional
-      float Ki = 1.448; // Ganho integral
-      float Kd = 76.125; // Ganho derivativo*/
+    //float Kp = 15.75; // Ganho proporcional
+    //float Ki = 0.04; // Ganho integral
+    //float Kd = 0; // Ganho derivativo
 
     // Variaveis de controle
 

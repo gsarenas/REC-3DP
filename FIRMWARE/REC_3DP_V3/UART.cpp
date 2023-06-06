@@ -25,6 +25,9 @@ namespace UART {
                 DEBUG_PRINT("Real T: ");
                 DEBUG_PRINT(Temperature::tempValue);
                 DEBUG_PRINT(" | ");
+                DEBUG_PRINT("SP: ");
+                DEBUG_PRINT(Temperature::targetTemp);
+                DEBUG_PRINT(" | ");
                 DEBUG_PRINT("ADC: ");
                 DEBUG_PRINT(Temperature::adcValue);
                 DEBUG_PRINT(" | ");
@@ -41,7 +44,10 @@ namespace UART {
                 DEBUG_PRINT(Temperature::integral);
                 DEBUG_PRINT(" | ");
                 DEBUG_PRINT("Derivative: ");
-                DEBUG_PRINTLN(Temperature::derivative);
+                DEBUG_PRINT(Temperature::derivative);
+                DEBUG_PRINT(" | ");
+                DEBUG_PRINT("OCR2A: ");
+                DEBUG_PRINTLN(Motor::motSpeed);
 
                 // Atualiza o ultimo instante em que 'print_debug()' foi chamado
                 prevMillis_Debug = currMillis_Debug;

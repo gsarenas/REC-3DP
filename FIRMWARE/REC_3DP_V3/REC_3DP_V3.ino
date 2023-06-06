@@ -16,8 +16,11 @@
 #include "REC_3DP_Config.h"
 
 void setup() {
+  #if DEBUG_ENABLED
   DEBUG_BEGIN(115200);
   DEBUG_PRINTLN("Debug Iniciado");
+  #endif
+  
   
   // Inicializa modulo de temperatura
   Temperature::Init_Timer3();

@@ -16,7 +16,7 @@
   #define DEBUG_BEGIN(x)
 #endif
 
-#define SERIAL_ENABLED true // Habilita comandos via porta serial (altere somente essa linha)
+#define SERIAL_ENABLED false // Habilita comandos via porta serial (altere somente essa linha)
 #if SERIAL_ENABLED
   #define SERIAL_PRINT(x) Serial.print(x)
   #define SERIAL_PRINTLN(x) Serial.println(x)
