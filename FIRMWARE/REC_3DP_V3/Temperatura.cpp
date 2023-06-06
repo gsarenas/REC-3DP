@@ -86,8 +86,8 @@ namespace Temperature {
         // Abre os circuitos dos MOSFETs
 
         digitalWrite(HEATED_BED_PIN, 0);  // PCB_ID: M1 -> nao mudar, nao e utilizado
-        digitalWrite(HOTEND_PIN, 0);      // PCB_ID: M2
-        digitalWrite(FANS_PIN, 0);        // PCB_ID: M3 -> nao mudar, nao e utilizado
+        digitalWrite(HOTEND_PIN, 0);      // PCB_ID: M2 -> hotend
+        digitalWrite(FANS_PIN, 0);        // PCB_ID: M3 -> fan
     }
 
     // Recebe o valor da porta analogica e converte para temperatura
@@ -122,16 +122,16 @@ namespace Temperature {
         #if COOLING_ENABLED
             // Recurso de resfriamento
             if (targetTemp == 0 && tempValue > 30) {
-                analogWrite(HEATED_BED_PIN, 255);
+                analogWrite(FANS_PIN, 255);
             } else
-                analogWrite(HEATED_BED_PIN, 0);
+                analogWrite(FANS_PIN, 0);
         #endif
 
         #if PID_TUNING_ENABLED
             currMillis_Temperature = millis();  // Atualiza o tempo rodando o programa atual na placa
             if (currMillis_Temperature >= 315000 && targetTemp != 0) {
                 if (DEBUG_ENABLED) DEBUG_PRINTLN("Stop!");
-                if (COOLING_ENABLED) analogWrite(HEATED_BED_PIN, 255);
+                if (COOLING_ENABLED) analogWrite(FANS_PIN, 255);
                 targetTemp = 0;
             }
         #endif
