@@ -15,6 +15,7 @@ Recicladora de Garrafa PET para Impressão 3D
 ## Funcionamento do projeto
 
 ## Design do dispositivo
+![](IMG/Render2.png)
 
 ### Protótipo funcionando
 [Recicladora PET - Teste 01](https://youtu.be/Kp44HoyRCVU)
