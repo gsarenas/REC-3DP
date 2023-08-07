@@ -27,7 +27,7 @@ Com a popularização da impressão 3D nos dias de hoje, a busca por insumos de 
 * Placa Creality3D V1.1.4 (Ender 3 Series)
 * Motor de passo NEMA 17 - VZS1740-048-1004 (Vurtz Motors)
 * Termistor NTC-100k
-* MOSFETs de potencia N-Channel - RF1S30N06LESM (Fairchild Semiconductor)
+* MOSFETs de potência N-Channel - RF1S30N06LESM (Fairchild Semiconductor)
 * Encoder rotativo com switch - KY-040 (Handson Technology)
 * Display LCD 16x2 com interface serial I2C (Handson Technology)
 * Cartucho aquecedor 24V 40W Ender 3 (Creality3D)
