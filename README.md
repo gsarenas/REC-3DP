@@ -1,8 +1,8 @@
 # REC-3DP  
 Recicladora de Garrafa PET para Impressão 3D  
   
-> **Apresentado a Faculdade Engenheiro Salvador Arena (FESA)**  
-> **Apresentacao de artigo no SIMAC**
+> **Apresentado à Faculdade Engenheiro Salvador Arena (FESA)**  
+> **Apresentaçãoo de artigo no SIMAC**
 >
 > **Desenvolvido por:**
 >
@@ -18,13 +18,19 @@ Com a popularização da impressão 3D nos dias de hoje, a busca por insumos de 
 ## Design do dispositivo
 ![](IMG/Render2.png)
 
-### Protótipo funcionando
+### Protótipo: funcionamento
 [Recicladora PET - Teste 01](https://youtu.be/Kp44HoyRCVU)
 
 ![](IMG/PROTOTIPO-FUNCIONANDO.png)
 
-### Placa protótipo
-Reaproveitando uma placa Creality3D V1.1.4 (Ender 3 Series)
+### Placa: hardware
+* Placa Creality3D V1.1.4 (Ender 3 Series)
+* Motor de passo NEMA 17 - VZS1740-048-1004 (Vurtz Motors)
+* Termistor NTC-100k
+* MOSFETs de potencia N-Channel - RF1S30N06LESM (Fairchild Semiconductor)
+* Encoder rotativo com switch - KY-040 (Handson Technology)
+* Display LCD 16x2 com interface serial I2C (Handson Technology)
+* Cartucho aquecedor 24V 40W (Creality Ender 3)
 
 ![](IMG/P_20230319_201323.jpg)
 
