@@ -30,7 +30,7 @@ Com a popularização da impressão 3D nos dias de hoje, a busca por insumos de 
 * MOSFETs de potencia N-Channel - RF1S30N06LESM (Fairchild Semiconductor)
 * Encoder rotativo com switch - KY-040 (Handson Technology)
 * Display LCD 16x2 com interface serial I2C (Handson Technology)
-* Cartucho aquecedor 24V 40W Ender 3 (Creality32D)
+* Cartucho aquecedor 24V 40W Ender 3 (Creality3D)
 
 ![](IMG/P_20230319_201323.jpg)
 
