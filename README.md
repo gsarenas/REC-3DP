@@ -23,7 +23,7 @@ Com a popularização da impressão 3D nos dias de hoje, a busca por insumos de 
 
 ![](IMG/PROTOTIPO-FUNCIONANDO.png)
 
-### Placa: hardware
+### Protótipo: hardware
 * Placa Creality3D V1.1.4 (Ender 3 Series)
 * Motor de passo NEMA 17 - VZS1740-048-1004 (Vurtz Motors)
 * Termistor NTC-100k
