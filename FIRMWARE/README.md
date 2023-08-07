@@ -2,7 +2,7 @@
 Firmware funcional com a programação necessária para o projeto
 
 ## REC_3DP_V3
-Firmware funcional completo com um rascunho de interface UART para comunicação serial via USB  
+Firmware funcional completo com interface visual com comunicação UART (serial USB)  
 Funções básicas implementadas:
 * F___: Feed Rate (controle da velocidade do motor)
 * M104 S___: Set Hotend Temperature (controle da temperatura do hotend)
