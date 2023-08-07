@@ -25,6 +25,7 @@ Com a popularização da impressão 3D nos dias de hoje, a busca por insumos de 
 
 ### Protótipo: hardware
 * Placa Creality3D V1.1.4 (Ender 3 Series)
+* Fonte de alimentação chaveada 24V 350W
 * Motor de passo NEMA 17 - VZS1740-048-1004 (Vurtz Motors)
 * Termistor NTC-100k
 * MOSFETs de potência N-Channel - RF1S30N06LESM (Fairchild Semiconductor)
